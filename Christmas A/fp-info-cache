@@ -1,4 +1,4 @@
-157065833742893
+158668738904166
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -51239,6 +51239,13 @@ Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W le
 0
 2
 2
+christmas
+star
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+0
+0
 christmas
 t_gnd
 Through hole straight pin header, 1x01, 2.54mm pitch, single row
