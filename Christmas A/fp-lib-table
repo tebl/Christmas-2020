@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name logo)(type KiCad)(uri D:/owncloud/Documents/Projects/Christmas/common/modules/logo.pretty)(options "")(descr ""))
+  (lib (name christmas)(type KiCad)(uri D:/owncloud/Documents/Projects/Christmas/common/modules/christmas.pretty)(options "")(descr ""))
+)
