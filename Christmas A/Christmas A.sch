@@ -130,8 +130,6 @@ F 3 "~" H 3950 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 3250 3850 3250
-Wire Wire Line
-	4050 2450 4225 2450
 $Comp
 L Device:LED_Small D2
 U 1 1 5F868550
@@ -305,25 +303,18 @@ F 3 "~" H 3500 3150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 5F8781A3
-P 4500 2250
-F 0 "J4" V 4525 2275 31  0000 R CNN
-F 1 "T_GND" H 4450 2225 31  0000 R CNN
-F 2 "christmas:t_gnd" H 4500 2250 50  0001 C CNN
-F 3 "~" H 4500 2250 50  0001 C CNN
-	1    4500 2250
-	0    -1   -1   0   
+L Device:LED_Small D1
+U 1 1 5F89482E
+P 4325 2450
+F 0 "D1" H 4525 2475 31  0000 C CNN
+F 1 "LED_Small" H 4325 2336 50  0001 C CNN
+F 2 "christmas:top_star" V 4325 2450 50  0001 C CNN
+F 3 "~" V 4325 2450 50  0001 C CNN
+	1    4325 2450
+	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5F87A677
-P 4225 2250
-F 0 "J3" V 4250 2275 31  0000 R CNN
-F 1 "T_POS" H 4175 2225 31  0000 R CNN
-F 2 "christmas:t_pos" H 4225 2250 50  0001 C CNN
-F 3 "~" H 4225 2250 50  0001 C CNN
-	1    4225 2250
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	4050 2450 4225 2450
+Wire Wire Line
+	4425 2450 4500 2450
 $EndSCHEMATC

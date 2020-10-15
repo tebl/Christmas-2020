@@ -19,7 +19,7 @@ U 1 1 5F863E92
 P 3950 2450
 F 0 "R1" V 3925 2275 31  0000 C CNN
 F 1 "220" V 3950 2450 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2450 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2450 50  0001 C CNN
 F 3 "~" H 3950 2450 50  0001 C CNN
 	1    3950 2450
 	0    1    1    0   
@@ -32,7 +32,7 @@ U 1 1 5F864CE5
 P 3950 2550
 F 0 "R2" V 3925 2375 31  0000 C CNN
 F 1 "220" V 3950 2550 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2550 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2550 50  0001 C CNN
 F 3 "~" H 3950 2550 50  0001 C CNN
 	1    3950 2550
 	0    1    1    0   
@@ -45,7 +45,7 @@ U 1 1 5F864FDA
 P 3950 2650
 F 0 "R3" V 3925 2475 31  0000 C CNN
 F 1 "220" V 3950 2650 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2650 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2650 50  0001 C CNN
 F 3 "~" H 3950 2650 50  0001 C CNN
 	1    3950 2650
 	0    1    1    0   
@@ -58,7 +58,7 @@ U 1 1 5F865203
 P 3950 2750
 F 0 "R4" V 3925 2575 31  0000 C CNN
 F 1 "220" V 3950 2750 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2750 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2750 50  0001 C CNN
 F 3 "~" H 3950 2750 50  0001 C CNN
 	1    3950 2750
 	0    1    1    0   
@@ -71,7 +71,7 @@ U 1 1 5F865371
 P 3950 2850
 F 0 "R5" V 3925 2675 31  0000 C CNN
 F 1 "220" V 3950 2850 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2850 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2850 50  0001 C CNN
 F 3 "~" H 3950 2850 50  0001 C CNN
 	1    3950 2850
 	0    1    1    0   
@@ -84,7 +84,7 @@ U 1 1 5F865559
 P 3950 2950
 F 0 "R6" V 3925 2775 31  0000 C CNN
 F 1 "220" V 3950 2950 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 2950 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 2950 50  0001 C CNN
 F 3 "~" H 3950 2950 50  0001 C CNN
 	1    3950 2950
 	0    1    1    0   
@@ -97,7 +97,7 @@ U 1 1 5F865638
 P 3950 3050
 F 0 "R7" V 3925 2875 31  0000 C CNN
 F 1 "220" V 3950 3050 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 3050 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 3050 50  0001 C CNN
 F 3 "~" H 3950 3050 50  0001 C CNN
 	1    3950 3050
 	0    1    1    0   
@@ -110,7 +110,7 @@ U 1 1 5F865769
 P 3950 3150
 F 0 "R8" V 3925 2975 31  0000 C CNN
 F 1 "220" V 3950 3150 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 3150 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 3150 50  0001 C CNN
 F 3 "~" H 3950 3150 50  0001 C CNN
 	1    3950 3150
 	0    1    1    0   
@@ -123,15 +123,13 @@ U 1 1 5F865A01
 P 3950 3250
 F 0 "R9" V 3925 3075 31  0000 C CNN
 F 1 "220" V 3950 3250 31  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 3250 50  0001 C CNN
+F 2 "christmas:resistor" H 3950 3250 50  0001 C CNN
 F 3 "~" H 3950 3250 50  0001 C CNN
 	1    3950 3250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3700 3250 3850 3250
-Wire Wire Line
-	4050 2450 4225 2450
 $Comp
 L Device:LED_Small D2
 U 1 1 5F868550
@@ -305,25 +303,18 @@ F 3 "~" H 3500 3150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 5F8781A3
-P 4500 2250
-F 0 "J4" V 4525 2275 31  0000 R CNN
-F 1 "T_GND" H 4450 2225 31  0000 R CNN
-F 2 "christmas:t_gnd" H 4500 2250 50  0001 C CNN
-F 3 "~" H 4500 2250 50  0001 C CNN
-	1    4500 2250
-	0    -1   -1   0   
+L Device:LED_Small D1
+U 1 1 5F89482E
+P 4325 2450
+F 0 "D1" H 4525 2475 31  0000 C CNN
+F 1 "LED_Small" H 4325 2336 50  0001 C CNN
+F 2 "christmas:LED_D5.0mm" V 4325 2450 50  0001 C CNN
+F 3 "~" V 4325 2450 50  0001 C CNN
+	1    4325 2450
+	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5F87A677
-P 4225 2250
-F 0 "J3" V 4250 2275 31  0000 R CNN
-F 1 "T_POS" H 4175 2225 31  0000 R CNN
-F 2 "christmas:t_pos" H 4225 2250 50  0001 C CNN
-F 3 "~" H 4225 2250 50  0001 C CNN
-	1    4225 2250
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	4050 2450 4225 2450
+Wire Wire Line
+	4425 2450 4500 2450
 $EndSCHEMATC
