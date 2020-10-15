@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Christmas A"
+Title "Christmas B"
 Date ""
 Rev "A"
 Comp ""
-Comment1 "A-side of the christmas tree."
-Comment2 "Slot into B-side before soldering star into place."
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 ""
+Comment3 "Slot into A-side before soldering star into place."
+Comment4 "B-side of the christmas tree."
 $EndDescr
 $Comp
 L Device:R_Small R1

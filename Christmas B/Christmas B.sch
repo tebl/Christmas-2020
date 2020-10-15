@@ -4,28 +4,15 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Christmas A"
+Title "Christmas B"
 Date ""
 Rev "A"
 Comp ""
-Comment1 "A-side of the christmas tree."
-Comment2 "Slot into B-side before soldering star into place."
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 ""
+Comment3 "Slot into A-side before soldering star into place."
+Comment4 "B-side of the christmas tree."
 $EndDescr
-$Comp
-L Device:R_Small R1
-U 1 1 5F863E92
-P 3950 2450
-F 0 "R1" V 3925 2275 31  0000 C CNN
-F 1 "220" V 3950 2450 31  0000 C CNN
-F 2 "christmas:resistor" H 3950 2450 50  0001 C CNN
-F 3 "~" H 3950 2450 50  0001 C CNN
-	1    3950 2450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3700 2450 3850 2450
 $Comp
 L Device:R_Small R2
 U 1 1 5F864CE5
@@ -235,8 +222,6 @@ $EndComp
 Wire Wire Line
 	4050 3250 4225 3250
 Wire Wire Line
-	4500 2450 4500 2550
-Wire Wire Line
 	4500 3250 4425 3250
 Wire Wire Line
 	4425 3150 4500 3150
@@ -270,7 +255,6 @@ Wire Wire Line
 	4500 2650 4500 2750
 Wire Wire Line
 	4425 2550 4500 2550
-Connection ~ 4500 2550
 Wire Wire Line
 	4500 2550 4500 2650
 Wire Wire Line
@@ -302,19 +286,5 @@ F 3 "~" H 3500 3150 50  0001 C CNN
 	1    3500 3150
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:LED_Small D1
-U 1 1 5F89482E
-P 4325 2450
-F 0 "D1" H 4525 2475 31  0000 C CNN
-F 1 "LED_Small" H 4325 2336 50  0001 C CNN
-F 2 "christmas:top_star" V 4325 2450 50  0001 C CNN
-F 3 "~" V 4325 2450 50  0001 C CNN
-	1    4325 2450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2450 4225 2450
-Wire Wire Line
-	4425 2450 4500 2450
+NoConn ~ 3700 2450
 $EndSCHEMATC
