@@ -1,4 +1,4 @@
-163485193060248
+166647442130145
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -51295,3 +51295,17 @@ wreath2
 0
 0
 0
+mounting
+M2
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+mounting
+M3
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
