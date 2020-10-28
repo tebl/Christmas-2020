@@ -1,4 +1,4 @@
-166647442130145
+168393772191915
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -51240,12 +51240,33 @@ LED diameter 5.0mm 2 pins
 2
 2
 christmas
+ball
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+0
+0
+christmas
 conn_base
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
 0
 5
 5
+christmas
+part_a
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+0
+0
+christmas
+part_b
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+0
+0
 christmas
 resistor
 Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
@@ -51295,17 +51316,3 @@ wreath2
 0
 0
 0
-mounting
-M2
-module 1 pin (ou trou mecanique de percage)
-DEV
-0
-1
-1
-mounting
-M3
-module 1 pin (ou trou mecanique de percage)
-DEV
-0
-1
-1
