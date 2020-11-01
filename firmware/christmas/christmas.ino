@@ -16,6 +16,8 @@
 #define MODE_MAX 3
 
 int mode = -1;
+byte star_value = 0;
+bool star_fading_out = false;
 unsigned long time_next = 0;
 
 void setup() {
@@ -29,7 +31,9 @@ void setup() {
   next_mode();
 }
 
-byte star_value = 0;
+/*
+ * Sets the LEDs according to the supplied parameters.
+ */
 void set_values(byte star, byte data_a, byte data_b) {
   if (star_value != star) {
     analogWrite(LED_STAR, star);
@@ -42,27 +46,33 @@ void set_values(byte star, byte data_a, byte data_b) {
   digitalWrite(SHIFT_LATCH, LOW);
 }
 
-bool fade_out = false;
+/*
+ * Handles fading the LED at the top of the christmas tree.
+ */
 int fade_star() {
   int value = star_value;
 
-  if (fade_out) {
+  if (star_fading_out) {
     value -= LED_STAR_INCREMENT;
     if (value < LED_STAR_MIN) {
-      fade_out = false;
+      star_fading_out = false;
       value = LED_STAR_MIN;
     }
     return value;
   } else {
     value += LED_STAR_INCREMENT;
     if (value > LED_STAR_MAX) {
-      fade_out = true;
+      star_fading_out = true;
       value = LED_STAR_MAX;
     }
     return value;
   }
 }
 
+/*
+ * Debounces the mode select switch, calls a function to next_mode
+ * function in order to actually change mode.
+ */
 bool old_switch_state = HIGH;
 bool new_switch_state1 = HIGH;
 bool new_switch_state2 = HIGH;
@@ -83,6 +93,11 @@ void handle_switch() {
   }
 }
 
+/*
+ * Switch LED mode to the next one, note that in the case of
+ * the first run (current mode is -1) we always initialize to
+ * the first one.
+ */
 void next_mode() {
   set_values(0, 0, 0);
 
@@ -98,6 +113,11 @@ void next_mode() {
   }
 }
 
+/*
+ * Called when the mode should be set to something specific. Not much
+ * here, but in case any later added modes needs implicit initialization
+ * then this would be where to put it.
+ */
 void set_mode(int number) {
   mode = number;
   Serial.print("Mode set to ");
@@ -110,6 +130,11 @@ void set_mode(int number) {
   }
 }
 
+/*
+ * Called from the main loop. Keeps track of the current time, when
+ * it is time to perform a step we proxy the call to the function
+ * specific to each mode.
+ */
 void handle_mode() {
   if (millis() > time_next) {
     switch(mode) {
@@ -124,6 +149,12 @@ void handle_mode() {
   if (millis() > time_next) time_next = millis() + 1000;
 }
 
+/*
+ * LED mode that should start by lighting a set of LEDs at the top
+ * of the tree, then those LEDs "fall" toward the bottom of the tree.
+ * 
+ * Star will be fading with each step.
+ */
 byte mode_falling_value = 0x00;
 void do_step_falling() {
   if (mode_falling_value == 0x00) mode_falling_value = 0x01;
@@ -131,6 +162,13 @@ void do_step_falling() {
   set_values(fade_star(), mode_falling_value, mode_falling_value);
 }
 
+/*
+ * LED mode that starts by lighting LEDs at the top, then starts
+ * lighting all of the LEDs toward the bottom until everything is
+ * lit up.
+ * 
+ * Star will be fading with each step.
+ */
 byte mode_growing_value = 0;
 void do_step_growing() {
   byte value = 1;
@@ -152,6 +190,12 @@ void do_step_growing() {
   time_next = millis() + 1000;
 }
 
+/*
+ * A randomized LED mode that for every step, will 40% of the time attempt
+ * to either lit or extinguish a random LED (depending on the current value).
+ * 
+ * Star will be fading with each step.
+ */
 byte mode_random_value_a = 0x00;
 byte mode_random_value_b = 0x00;
 void do_step_random() {
@@ -165,17 +209,29 @@ void do_step_random() {
   time_next = millis() + 250;
 }
 
+/*
+ * Takes a the supplied byte and then randomly flip one of the 8 bits.
+ */
 byte randomize_bit(byte current) {
   byte bit_num = random(0, 8);
   if (bitRead(current, bit_num) == 0) return bitSet(current, bit_num);
   return bitClear(current, bit_num);
 }
 
+/*
+ * LED mode where the tree itself is dark, but we'll fade the star in
+ * and out. The background for this is a local tradition where the tree
+ * isn't lit until the day before christmas eve, but the star is there
+ * to guide the way.
+ */
 void do_step_fade_star() {
   set_values(fade_star(), 0, 0);
   time_next = millis() + 200;
 }
 
+/*
+ * Main loop.
+ */
 void loop() {
   handle_switch();
   handle_mode();
