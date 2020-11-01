@@ -18,6 +18,8 @@ Because I wanted something that looked good without any components, parts A/B wi
 
 Parts A/B are attached to the base using right-angle pin headers, take care that you match the orientation to the corresponding parts on part C. While on the subject of part C, the only important part here is that you'll probably need to solder the switch into place before putting in the Arduino Nano (unless you'll be using female header pins so that you can remove it later). The rest of the components (including the Nano) will be installed on the underside of part C.
 
+![PCB component side](https://github.com/tebl/Christmas-2020/raw/main/gallery/2020-10-28%2022.58.43.jpg)
+
 Given that there are components on the underside of the base, you'll need to add some M3 hex spacers to it so that it won't scrape against the table - if you have an extra part C PCB I recommend putting it on the bottom as well so that it doesn't get knocked around so easily.
 
 ## BOM
