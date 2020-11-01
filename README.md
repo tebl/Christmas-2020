@@ -19,4 +19,20 @@ Parts A/B are attached to the base using right-angle pin headers, take care that
 Given that there are components on the underside of the base, you'll need to add some M3 hex spacers to it so that it won't scrape against the table - if you have an extra part C PCB I recommend putting it on the bottom as well so that it doesn't get knocked around so easily.
 
 ## BOM
-I should probably add one.
+The BOM, or bill of manufacturing, is a list of the components used when constructing the complete christmas tree. Note that since you can substitute the LEDs/resistors you want to use - the following may be more of a suggestion though you'd need all of it in order to make everything blink. Most of these components should be easily obtainable through your favourite local electronics components store. Right-angle pin headers are usually sold in breakable strips with 40 pins, so just break off 5 pin segments where needed.
+
+| Reference    | Item                                       | Count |
+| ------------ | ------------------------------------------ | ----- |
+| Christmas A  | Fabricate using Gerber files ([order]())   |     1 |
+| D1-D9        | LED (3mm or 5mm, colour as wanted)         |     9 |
+| R1-R9        | 220, 330 or 1k ohm resistor *              |     9 |
+| J1,J2        | 1x5-pin right-angle header                 |     2 |
+| Christmas B  | Fabricate using Gerber files ([order]())   |     1 |
+| D2-D9        | LED (3mm or 5mm, colour as wanted)         |     8 |
+| R2-R9        | 220, 330 or 1k ohm resistor *              |     8 |
+| J1,J2        | 1x5-pin right-angle header                 |     2 |
+| Christmas C  | Fabricate using Gerber files ([order]())   |     1 |
+| SW1          | SPST momentary push button                 |     1 |
+| A1           | Arduino Nano                               |     1 |
+| U1,U2        | 74HC595 (DIP-16)                           |     2 |
+*) Use resistors with values that would correspond to the LED you installed, use higher resistrance the brighter the LED (especially the blue ones). If a soldered in LED is too dim, install a lower value on the back as well in order to lower the resistance going to it.
