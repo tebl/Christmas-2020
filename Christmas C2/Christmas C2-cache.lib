@@ -1,25 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
-#
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x05
 #
 DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
@@ -42,6 +23,58 @@ X Pin_2 2 -200 100 150 R 50 50 1 1 P
 X Pin_3 3 -200 0 150 R 50 50 1 1 P
 X Pin_4 4 -200 -100 150 R 50 50 1 1 P
 X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Battery_Cell
+#
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# microusb_breakout_MicroUSB
+#
+DEF microusb_breakout_MicroUSB A? 0 40 Y N 1 F N
+F0 "A?" 175 300 50 H V C CNN
+F1 "microusb_breakout_MicroUSB" 325 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+T 0 25 0 50 0 0 0 D+ Normal 0 L C
+T 0 25 100 50 0 0 0 D- Normal 0 L C
+T 0 25 -200 50 0 0 0 GND Normal 0 L C
+T 0 25 -100 50 0 0 0 ID Normal 0 L C
+T 0 25 200 50 0 0 0 VCC Normal 0 L C
+S 250 -200 400 -200 0 0 0 N
+S 400 200 250 200 0 0 0 N
+S -50 250 400 -250 0 1 0 f
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+P 2 0 0 0 250 -200 250 200 N
+X VCC 1 -200 200 150 R 50 50 1 1 w
+X D- 2 -200 100 150 R 50 50 1 1 B
+X D+ 3 -200 0 150 R 50 50 1 1 B
+X ID 4 -200 -100 150 R 50 50 1 1 B
+X GND 5 -200 -200 150 R 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

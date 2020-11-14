@@ -2,4 +2,5 @@
   (lib (name arduino_nano)(type Legacy)(uri $KIPRJMOD/../common/library/arduino_nano.lib)(options "")(descr ""))
   (lib (name 74hc595_alt)(type Legacy)(uri $KIPRJMOD/../common/library/74hc595_alt.lib)(options "")(descr ""))
   (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../common/library/mounting.lib)(options "")(descr ""))
+  (lib (name microusb_breakout)(type Legacy)(uri "D:/owncloud/Documents/Projects/Christmas 2020/common/library/microusb_breakout.lib")(options "")(descr ""))
 )
